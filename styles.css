@@ -1,3 +1,121 @@
-span {
-    color: red;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: "Oswald";
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-image: url('./assets/RightHeaderPicture.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% 100%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem 7rem;
+}
+
+.right-header {
+    width: 50%;
+    height: 100%;
+    padding-left: 7rem;
+}
+
+.menu {  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.menu span {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.menu span.active {
+    border-bottom: 2px solid white;
+}
+
+.promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+
+.text-promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: fit-content;
+    gap: 3rem;
+    width: 52%;
+    padding: 4rem 0 0 10rem;
+
+}
+
+.text-promo h1 {
+    text-align: start;     
+    font-size: 3.75rem;
+    line-height: 1.1;
+}
+
+.text-promo p {
+    text-align: start;     
+    font-size: 1.5rem;
+}
+
+.text-promo button {
+    padding: 1rem 1.75rem;
+    background-color: #68B738;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.empty-promo{
+    width: 35%;
 }

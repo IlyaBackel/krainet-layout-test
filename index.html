@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Cat Energy</title>
 </head>
+
 <body>
-    <img src="./assets/CatEnegyLogo.svg" alt="Cat Energy Logo">
+    <header>
+        <div class="header-container">
+            <div class="left-header">
+                <img src="./assets/CatEnegyLogo.svg" alt="Cat Energy Logo">
+            </div>
+            <div class="right-header">
+                <div class="menu">
+                    <span class="active">ГЛАВНАЯ</span>
+                    <span>КАТАЛОГ ПРОДУКЦИИ</span>
+                    <span>ПОДБОР ПРОГРАММЫ</span>
+                </div>
+            </div>
+        </div>
+        <div class="promo">
+            <div class="text-promo">
+                <h1>Функциональное <br> питание для котов</h1>
+                <p>ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
+                <button>ПОДОБРАТЬ ПРОГРАММУ</button>
+            </div>
+            <div class="picture-promo"></div>
+            <img src="./assets/PromoPicture.svg" style="z-index: 10;" alt="">
+            <div class="empty-promo"></div>
+        </div>
+    </header>
+    <main>
+        <div class="cards"></div>
+    </main>
 </body>
+
 </html>

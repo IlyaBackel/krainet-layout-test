@@ -128,8 +128,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 4rem;
-    padding: 5rem 8rem 0 0;
+    margin: 5rem 0;
+    padding: 5rem 8rem 0 3rem;
+
 }
 
 .card {
@@ -206,3 +207,147 @@ header {
     padding: 1rem;
 }
 
+.living-example {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.living-example h1 {
+    font-size: 3.75rem;
+    line-height: 3.75;
+}
+
+.example-description {
+    font-family: Arial;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444444;
+    margin-top: 2rem;
+}
+
+.example-text {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 5rem;
+}
+
+.example-price {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem
+}
+
+.example-price p:first-child {
+    text-transform: uppercase;
+}
+
+.example-price p {
+    font-size: 1.25rem;
+}
+
+.example-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+
+.weight-loss, .time-spend {
+  position: relative;
+  width: 220px;
+  padding: 25px 20px 30px 20px; 
+  border: 2px solid #CDCDCD ;
+  background-color: #ffffff; 
+  text-align: center;
+}
+
+.weight-loss p:first-child, 
+.time-spend p:first-child { 
+  font-weight: 400;
+  font-size: 1.875rem;
+}
+
+.weight-loss p:last-child, 
+.time-spend p:last-child {
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  transform: translate(-50%, 50%); 
+  margin: 0;
+  padding: 0 12px; 
+  background-color: #ffffff; 
+  white-space: nowrap; 
+  font-size: 0.875rem;
+  color: #444444;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.slider {
+    width: 35%;
+    margin-right: 8rem;
+    display: block;
+    margin: auto;
+}
+
+.comparison-slider {
+    position: relative;
+    aspect-ratio: 3/4 ;
+    overflow: hidden;
+    background: #e0e0e0;
+    display: flex;
+    justify-content: center;
+}
+
+.comparison-slider img {
+    position: absolute;
+    height: 100%;
+    display: block;
+}
+
+.img-before {
+    z-index: 1;
+}
+
+.img-after {
+    z-index: 2;
+    clip-path: inset(0 50% 0 0); 
+    transition: 0.05s linear;
+}
+
+#sliderRange {
+    flex: 1;
+    height: 6px;
+    -webkit-appearance: none;
+    background-color: #DCDCDC;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#sliderRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #68B738;
+    border-radius: 50%;
+    border: 7px solid #ffffff;
+    box-shadow: 0 0 3px 2px #CDCDCD;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.controls span {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}

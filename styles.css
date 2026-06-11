@@ -12,6 +12,10 @@ body {
     padding-left: 8rem;
 }
 
+main {
+    margin-bottom: 5rem;
+}
+
 ol,
 ul {
     list-style: none;
@@ -249,42 +253,43 @@ header {
 }
 
 .example-cards {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 50px;
-  font-family: sans-serif;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: sans-serif;
 }
 
-.weight-loss, .time-spend {
-  position: relative;
-  width: 220px;
-  padding: 25px 20px 30px 20px; 
-  border: 2px solid #CDCDCD ;
-  background-color: #ffffff; 
-  text-align: center;
+.weight-loss,
+.time-spend {
+    position: relative;
+    width: 220px;
+    padding: 25px 20px 30px 20px;
+    border: 2px solid #CDCDCD;
+    background-color: #ffffff;
+    text-align: center;
 }
 
-.weight-loss p:first-child, 
-.time-spend p:first-child { 
-  font-weight: 400;
-  font-size: 1.875rem;
+.weight-loss p:first-child,
+.time-spend p:first-child {
+    font-weight: 400;
+    font-size: 1.875rem;
 }
 
-.weight-loss p:last-child, 
+.weight-loss p:last-child,
 .time-spend p:last-child {
-  position: absolute;
-  bottom: 0; 
-  left: 50%;
-  transform: translate(-50%, 50%); 
-  margin: 0;
-  padding: 0 12px; 
-  background-color: #ffffff; 
-  white-space: nowrap; 
-  font-size: 0.875rem;
-  color: #444444;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin: 0;
+    padding: 0 12px;
+    background-color: #ffffff;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    color: #444444;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .slider {
@@ -296,7 +301,7 @@ header {
 
 .comparison-slider {
     position: relative;
-    aspect-ratio: 3/4 ;
+    aspect-ratio: 3/4;
     overflow: hidden;
     background: #e0e0e0;
     display: flex;
@@ -315,8 +320,9 @@ header {
 
 .img-after {
     z-index: 2;
-    clip-path: inset(0 50% 0 0); 
-    transition: 0.05s linear;
+    clip-path: inset(0 50% 0 0);
+    transition: clip-path 0.05s linear;
+    will-change: clip-path;
 }
 
 #sliderRange {
@@ -350,4 +356,76 @@ header {
 .controls span {
     text-transform: uppercase;
     font-size: 1.25rem;
+}
+
+.yandex-map {
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.banner {
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+    background-color: #ffffff;
+    padding: 5rem;
+    font-family: 'Oswald', sans-serif;
+    z-index: 10;
+    pointer-events: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.invite {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address p {
+    font-size: 1rem;
+    color: #444444;
+    width: 70%;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 3.5rem;
+}
+
+.text-logo {
+    display: flex;
+    gap: 5px;
+}
+
+.text-logo p {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.text-logo p:first-child {
+    font-weight: 900;
+}
+
+.contacts-list{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.academy-logo {
+    display: flex;
+    gap: 1.5rem;
+    font-family: Arial;
+    color: #444444;
+    align-items: center;
 }

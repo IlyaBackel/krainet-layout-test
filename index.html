@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=623abc43-d694-4a64-bc6c-e84a6b56254e&lang=ru_RU"
+        type="text/javascript"></script>
     <title>Cat Energy</title>
 </head>
 
@@ -133,8 +135,8 @@
             </div>
             <div class="slider">
                 <div class="comparison-slider">
-                        <img src="./assets/FatCat.png" alt="Кот до" class="img-before">
-                        <img src="./assets/SkinnyCat.png" alt="Кот после" class="img-after" id="afterImg">
+                    <img src="./assets/FatCat.png" alt="Кот до" class="img-before">
+                    <img src="./assets/SkinnyCat.png" alt="Кот после" class="img-after" id="afterImg">
                 </div>
                 <div class="controls">
                     <span>было</span>
@@ -144,6 +146,40 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div class="yandex-map">
+            <div id="map" style="width: 100%; height: 500px;"></div>
+            <div class="banner">
+                <p class="invite">
+                    приглашаем<br>
+                    к сотрудничеству<br>
+                    дилеров!
+                </p>
+                <span class="address">
+                    <p>
+                        ул. Большая
+                        Конюшенная, д. 19/8
+                    </p>
+                    <p>Санкт-Петербург</p>
+                </span>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="text-logo">
+                <p>cat</p>
+                <p>energy</p>
+            </div>
+            <div class="contacts-list">
+                <div class="logo-img"><img src="./assets/VK.svg" alt=""></div>
+                <div class="logo-img"><img src="./assets/Inst.svg" alt=""></div>
+                <div class="logo-img"><img src="./assets/Facebook.svg" alt=""></div>
+            </div>
+            <div class="academy-logo">
+                <p>HTML Academy</p>
+                <img src="./assets/HTMLAcademy.svg" alt="">
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
